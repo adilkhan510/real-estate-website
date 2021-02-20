@@ -1,12 +1,19 @@
 import React from "react";
-import { Nav, Logo, MenuBars, NavMenu } from "./navBar.elements";
+import { menuData } from "../../data/MenuData";
+import { Nav, Logo, MenuBars, NavMenu, NavMenuLinks } from "./navBar.elements";
 
 export const Navbar = () => {
   return (
     <Nav>
       <Logo>Lemonada</Logo>
       <MenuBars />
-      <NavMenu></NavMenu>
+      <NavMenu>
+        {menuData.map((item, index) => (
+          <NavMenuLinks to={item.link} key={index}>
+            {item.title}
+          </NavMenuLinks>
+        ))}
+      </NavMenu>
     </Nav>
   );
 };
