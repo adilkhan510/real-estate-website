@@ -1,6 +1,14 @@
 import React from "react";
 import { menuData } from "../../data/MenuData";
-import { Nav, Logo, MenuBars, NavMenu, NavMenuLinks } from "./navBar.elements";
+import { Button } from "../Utils/Buttons";
+import {
+  Nav,
+  Logo,
+  MenuBars,
+  NavMenu,
+  NavMenuLinks,
+  NavBtn,
+} from "./navBar.elements";
 
 export const Navbar = () => {
   return (
@@ -13,6 +21,11 @@ export const Navbar = () => {
             {item.title}
           </NavMenuLinks>
         ))}
+        <NavBtn>
+          <Button to="/contact" primary="true">
+            Contact us
+          </Button>
+        </NavBtn>
       </NavMenu>
     </Nav>
   );

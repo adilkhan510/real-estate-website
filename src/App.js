@@ -1,16 +1,15 @@
-import React from 'react';
-import {Navbar} from './components/Navbar/index'
-
-
-
+import React from "react";
+import Hero from "./components/Hero";
+import { Navbar } from "./components/Navbar/index";
+import GlobalStyle from "./globalStyles";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar>
-
-      </Navbar>
-    </div>
+    <>
+      <GlobalStyle />
+      <Navbar></Navbar>
+      <Hero></Hero>
+    </>
   );
 }
 
