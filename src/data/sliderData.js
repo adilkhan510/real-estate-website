@@ -1,11 +1,12 @@
 import imageOne from "../images/house3.jpg";
-import imageTwo from "../images/2.jpg";
-import imageThree from "../images/3.jpg";
-import imageFour from "../images/4.jpg";
+import imageTwo from "../images/house5.jpg";
+import imageThree from "../images/house6.jpg";
+import imageFour from "../images/house7.jpg";
+import imageFive from "../images/houseFour.jpg";
 
 export const sliderData = [
   {
-    title: "luxury villa in Bali",
+    title: "Luxury Villa in Bali",
     price: "$4,280,000",
     path: "/homes",
     label: "View Home",
@@ -17,11 +18,19 @@ export const sliderData = [
     price: "$1,000,000",
     path: "/homes",
     label: "View Home",
-    image: imageTwo,
+    image: imageFive,
     alt: "House",
   },
   {
-    title: "luxury villa in Bali",
+    title: "Modern Home in LA",
+    price: "$2,314,569",
+    path: "/homes",
+    label: "View Home",
+    image: imageFour,
+    alt: "House",
+  },
+  {
+    title: "Condo in Hawaii",
     price: "$2,314,569",
     path: "/homes",
     label: "View Home",
@@ -29,15 +38,7 @@ export const sliderData = [
     alt: "House",
   },
   {
-    title: "luxury villa in Bali",
-    price: "$2,314,569",
-    path: "/homes",
-    label: "View Home",
-    image: imageThree,
-    alt: "House",
-  },
-  {
-    title: "luxury villa in Bali",
+    title: "Villa in Ecudor",
     price: "$2,314,569",
     path: "/homes",
     label: "View Home",

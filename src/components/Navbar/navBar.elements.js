@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 `;
 
 export const Logo = styled(Link)`
@@ -31,7 +31,6 @@ export const Logo = styled(Link)`
 
 export const MenuBars = styled.li`
   display: none;
-
   background: url(${menuBar});
   background-size: contain;
   @media screen and (max-width: 762px) {
@@ -39,6 +38,7 @@ export const MenuBars = styled.li`
     height: 50px;
     width: 50px;
     position: absolute;
+    z-index: 100;
     top: 0;
     right: 0;
     transform: translate(-50%, 10%);
@@ -49,7 +49,7 @@ export const NavMenu = styled.div`
   align-items: center;
   /* margin-right: -45px; */
   justify-content: space-between;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 762px) {
     display: none;
   }
 `;

@@ -12,7 +12,7 @@ const arrowButtons = css`
   padding: 10px;
   margin-right: 1rem;
   user-select: none;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
 
   &:hover {
     background-color: #cd853f;
@@ -84,19 +84,22 @@ export const HeroImage = styled.img`
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
 `;
 export const HeroContent = styled.div`
   position: relative;
   z-index: 10;
   display: flex;
+  left: -15%;
   flex-direction: column;
   max-width: 1600px;
   width: calc(100%-100px);
   color: #fff;
 
   h1 {
-    font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 400;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    /* first value = smallest  */
+    font-weight: 800;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
