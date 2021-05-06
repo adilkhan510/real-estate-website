@@ -92,23 +92,29 @@ export const HeroContent = styled.div`
   display: flex;
   left: -15%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1600px;
   width: calc(100%-100px);
   color: #fff;
+  padding: 2rem;
+  margin-left: 1rem;
 
   h1 {
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    /* font-size: clamp(1.5rem, 8vw, 2.5rem); */
     /* first value = smallest  */
+    font-size: clamp(0.5rem, 8vw, 2.5rem);
     font-weight: 800;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-    text-align: left;
+    text-align: center;
     margin-bottom: 0.8rem;
   }
 
   p {
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
   }
 `;
 

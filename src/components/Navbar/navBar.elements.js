@@ -16,7 +16,7 @@ export const Nav = styled.nav`
 
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   position: fixed;
   width: 100%;
   z-index: 10;
